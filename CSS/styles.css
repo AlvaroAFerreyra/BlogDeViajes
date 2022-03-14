@@ -19,6 +19,22 @@ p{
     line-height: 2;
 }
 
+.boton{
+    background-color: #00B8E4;
+    padding: 0.7rem 2rem;
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+.boton:hover{
+    background-color: #026d88;
+
+}
+
 .site_header{
     padding: 20px 0;
 }
@@ -33,6 +49,7 @@ p{
 
 .barra{
     background-color: #DB008D;
+    margin-top: 4rem;
 }
 
 .navegacion_principal a{
@@ -56,9 +73,13 @@ p{
 
 /*CONTENEDORES PRINCIPALES*/
 
+.contenido_principal{
+    margin-top: 4rem;
+}
+
 .contenido_principal,
 .sidebar{
-    padding: 20px;
+    padding: 2rem;
 }
 
 @media (min-width:768px){
@@ -71,6 +92,7 @@ p{
         width: 30%;
         float: right;
         padding: 0;
+        margin-top: 4rem;
     }
 }
 
@@ -82,7 +104,11 @@ h2{
 }
 
 .entrada_blog{
-    margin-top: 30px;
+    margin-bottom: 4rem;
+}
+
+.entrada_blog:last-of-type{
+    margin-bottom: 0;
 }
 
 .entrada_blog img{
@@ -95,4 +121,76 @@ h2{
         float: left;
         margin: 0 30px 0 0;
     }
+}
+
+.entrada p{
+    text-align: justify;
+}
+
+/*SIDEBAR*/
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar ul li{
+    padding: 1rem 1rem 1rem 0;
+}
+
+.sidebar ul li:hover{
+    background-color: #00B8E4;
+}
+
+.sidebar ul li a{
+    color: #00B8E4;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.sidebar ul li:hover a{
+    color: white;
+}
+
+.site_footer{
+    background-color: #DB008D;
+    padding-top: 4rem;
+    margin-top: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.site_footer h2{
+    color: white;
+}
+
+.site_footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.site_footer a:last-of-type{
+    margin-right: 0;
+}
+
+@media (min-width:768px){
+    .site_footer .nosotros{
+        float: left;
+        width: 30%;
+        text-align: left;
+    }
+
+    .site_footer .menu{
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+}
+
+.copyright{
+    background-color: #91035f;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding: 1rem 0;
 }
