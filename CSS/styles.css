@@ -45,6 +45,41 @@ p{
     overflow: auto;
 }
 
+/*NAVEGACION RESPONSIVE*/
+
+.barra{
+    overflow: hidden;
+}
+
+.mobile_menu{
+    background-color: #DB008D;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    padding: 1rem 0;
+}
+
+#nav:target{
+    max-height: 80rem;    
+}
+
+.navegacion_principal{
+    background-color: #DB008D;
+    max-height: 0;
+    transition: .5s;
+}
+
+@media (min-width:768px){}
+    .navegacion_principal{
+        max-height: unset;
+    }
+    .mobile_menu,
+    .cerrar{
+        display: none!important;
+    }
+}
+
 /*NAVEGACIÓN*/
 
 .barra{

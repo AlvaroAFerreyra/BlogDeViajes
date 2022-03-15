@@ -7,18 +7,27 @@
     <title>Blog de Viajes</title>
     <link rel="stylesheet" href="../BlogDeViajes/CSS/normalize.css">
     <link rel="stylesheet" href="../BlogDeViajes/CSS/styles.css">
+    <script src="https://kit.fontawesome.com/ba4aca434a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="site_header contenedor">
         <img src="../BlogDeViajes/img/logo.png" alt="Imagen Logo">
 
         <div class="barra">
-            <nav class="navegacion_principal contenedor">
+
+            <a href="#nav" class="mobile_menu">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </a>
+
+            <nav id="nav" class="navegacion_principal contenedor">
                 <a href="#">Inicio</a>
                 <a href="#">Nosotros</a>
                 <a href="#">Blog</a>
                 <a href="#">Tienda</a>
                 <a href="#">Contacto</a>
+                <a href="#" class="cerrar">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
             </nav>
         </div>
     </header>    
