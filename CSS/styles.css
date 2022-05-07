@@ -131,6 +131,45 @@ p{
     }
 }
 
+/*SERVICIOS*/
+
+.servicios{
+    margin-top: 30px;
+}
+
+.servicios nav{
+    background-color: #00B8E4;
+}
+
+.servicios nav a{
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.servicios nav a.activo{
+    background-color: #DB008D;
+}
+
+.servicios nav a:hover{
+    background-color: #DB008D;
+}
+
+.nuestros_servicios{
+    position: relative;
+}
+
+.nuestros_servicios > div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #DB008D;
+    padding: 20px;
+    display: none;
+    color: white;
+}
+
 /*ENTRADAS DE BLOG*/
 
 h2{
